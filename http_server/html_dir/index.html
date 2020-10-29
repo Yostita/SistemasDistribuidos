@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Inicio de sesion</title>
+    <link rel="shortcut icon" href="./icon.png">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+    <div class="d-flex w-100 h-100 mx-auto flex-column">
+      <header class="mb-auto bg-dark p-1 w-100">
+        <a class="navbar-brand" href="index.html">
+          <img src="https://www.u-tad.com/wp-content/uploads/2016/02/logo-utad-1.png" class="d-inline-block align-top" alt="" height="40rem">
+        </a>
+      </header>
+
+      <form class="mb-auto ml-1 mr-1" action="login.php" method="post">
+
+        <div class="card rounded-lg" style="width: 30rem;">
+          <div class="card-body mb-0">
+
+            <h5 class="card-title">Sign in</h5>
+            <h6 class="card-subtitle mb-3 text-muted font-weight-light">Introduzca sus datos de usuario.</h6>
+
+            <div class="container">
+              <div class="form-group">
+                <h6 class="card-subtitle mb-1 text-muted">Usuario</h6>
+                <input type="text" class="form-control" placeholder="Inserte usuario" id="user" name="uname" required>
+              </div>
+
+              <div class="form-group">
+                <h6 class="card-subtitle mb-1 text-muted">Contraseña</h6>
+                <input type="password" class="form-control" placeholder="Inserte contraseña" id= "psw" name="psw" required>
+              </div>
+
+              <div class="form-group mb-0">
+                <button type="submit" class="btn btn-success" onclick="cifrado(psw)">Entrar</button>
+                <label><input type="checkbox" checked="checked" name="remember">Recuerdame</label>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="container rounded-bottom" style="background-color:#f1f1f1">
+            <a href="#" class="btn btn-danger rounded-lg mt-0" role="button">Cancelar</a>
+            <span class="psw">¿Olvidaste la <a href="https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-9/70122101_3064920090247804_3080008188553068544_o.jpg?_nc_cat=109&_nc_oc=AQmtzyPfgjUFdlrLfw6oZALzJCRs_nr0-VEhUb1H-M6AH2L8TGGSpAoz8nVVGVaiNv8&_nc_ht=scontent-mad1-1.xx&oh=d2423e2558462d9f1e19a518fe54c2a3&oe=5E608807">contraseña</a>?</span>
+          </div>
+
+        </div>
+
+        <script type="text/Javascript">
+          function cifrado(psw)
+          {
+            if (document.getElementById('user').value && document.getElementById('psw').value)
+              document.getElementById('psw').value='123' + document.getElementById('psw').value + '123';
+
+            return psw;
+          }
+        </script>
+      </form>
+  
+      <section  class="copyright text-center text-white" style="background-color:rgb(22, 22, 22); ">
+        <div class="container" >
+          <small>Copyright &copy; <a href="https://www.instagram.com/luisct99/" class="text-white">Luis Crespo</a> &
+          <a href="https://www.instagram.com/_yosta_/" class="text-white">Jose Luis Bellosta</a> 2019</small>
+        </div>
+      </section>
+
+    </div>
+  </body>
+</html>

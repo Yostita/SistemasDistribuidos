@@ -1,0 +1,59 @@
+html,body { height: 100%;}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+/* Add padding to containers */
+.container {
+  padding: 6px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 8px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+.card {
+  size: 20%;
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+}
+
+body{
+  background-image: url('https://www.elsetge.cat/myimg/f/94-948125_ultrawide-canada-wallpaper-21-9.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
