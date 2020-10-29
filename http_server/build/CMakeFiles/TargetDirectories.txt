@@ -1,0 +1,6 @@
+/home/lluspel/Documentos/T4/http_server/build/CMakeFiles/edit_cache.dir
+/home/lluspel/Documentos/T4/http_server/build/CMakeFiles/http_server.dir
+/home/lluspel/Documentos/T4/http_server/build/CMakeFiles/rpc_pruebaclase.dir
+/home/lluspel/Documentos/T4/http_server/build/CMakeFiles/rebuild_cache.dir
+/home/lluspel/Documentos/T4/http_server/build/CMakeFiles/rpc_filemanager.dir
+/home/lluspel/Documentos/T4/http_server/build/CMakeFiles/rpc_remotefile.dir
